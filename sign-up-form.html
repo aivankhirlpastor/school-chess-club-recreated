@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN UP FORUM</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body id="sign-up-form-verso">
+    <nav>
+        <div class="top-nav">
+            <div class="more-info-icn extent">
+                <img id="menu-panel-btn" src="images/menu-more-panel.svg" alt="A three line illustrates as to show more">
+            </div>
+            <div class="title">
+                <img src="images/OSC-logo.png" alt="OSC Chess Club logo" width="75">
+                <span>CHESS CLUB PREMIUM</span>
+            </div>
+        </div>
+        <div class="buttons">
+            <div id="home-btn-key">
+                <a href="index.html">HOME</a>
+                <div class="label-display">
+                    <p>The introduction of the page displaying for the arrival of the new incomer at the premium chess club.</p>
+                </div>
+            </div>
+            <div id="introduction-btn-key">
+                <a href="introduction.html">RESOURCES</a>
+                <div class="label-display">
+                    <p>You may find informative materials to learn more about this subject, including articles, references, and videos.</p>
+                </div>
+            </div>
+            <div id="sign-up-form-btn-key">
+                <a href="sign-up-form.html">SIGN UP</a>
+                <div class="label-display">
+                    <p>Take in ease to fill the sign-up form to access all valuable information, forums, conversations, and tutorials, from us.</p>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <section class="sign-up-form" id="sign-up-form">
+            <div class="flex-centre">
+                <h2 class="heading-label">Join our community</h2>
+            </div>
+            <p id="span-p_getbehind">Begin experiencing the fun at the club.</p>
+            <form>
+                <div class="input-label-for-email input-label-display">
+                    <div class="flex-textbox">
+                        <label for="email">School Email</label>
+                        <span class="info">?</span>
+                        <div class="label-display mark-hover">
+                            <p>Your school address at OSC consist five digits after 'st'; exclusive only in OSC.</p>
+                        </div>
+                    </div>
+                    <input id="email" type="text" placeholder="st00000@ormiston.school.nz" autocomplete="on">
+                </div>
+                <div class="names-first-and-last column">
+                    <div class="input-label-for-firstname input-label-display">
+                        <div class="flex-textbox">
+                            <label for="firstname">First Name</label>
+                            <span class="info">?</span>
+                            <div class="label-display mark-hover">
+                                <p>Your initial name, plus [if you have] the middle name.</p>
+                            </div>
+                        </div>
+                        <input id="firstname" type="text" placeholder="first name">
+                    </div>
+                    <div class="input-label-for-lastname input-label-display">
+                        <div class="flex-textbox">
+                            <label for="lastname">Last Name</label>
+                            <span class="info">?</span>
+                            <div class="label-display mark-hover column">
+                                <p>Your last name</p>
+                            </div>
+                        </div>
+                        <input id="lastname" type="text" placeholder="last name">
+                    </div>
+                </div>
+                <div class="region-gender column">
+                    <div class="input-label-for-region input-label-display">
+                        <div class="flex-textbox">
+                            <label for="region">Region</label>
+                            <span class="info">?</span>
+                            <div class="label-display mark-hover">
+                                <p>The country where you born</p>
+                            </div>
+                        </div>
+                        <input id="region" type="text" placeholder="country" autocomplete="on">
+                    </div>
+                    <div class="input-label-for-gender input-label-display">
+                        <div class="flex-textbox">
+                            <label for="gender">Gender</label>
+                            <span class="info">?</span>
+                            <div class="label-display mark-hover column">
+                                <p>Are you male or female?</p>
+                            </div>
+                        </div>
+                        <select id="gender">
+                            <option value="none">---</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="prefer-not-to-say">Prefer not to say</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="year-levelskill column">
+                    <div class="input-label-for-year input-label-display">
+                        <div class="flex-textbox">
+                            <label for="yearlevel">Year</label>
+                            <span class="info">?</span>
+                            <div class="label-display mark-hover">
+                                <p>Your educational or school year level</p>
+                            </div>
+                        </div>
+                        <input id="yearlevel" type="text" placeholder="year">
+                    </div>
+                    <div class="input-label-for-level input-label-display">
+                        <div class="flex-textbox">
+                            <label for="levelskill">Tier</label>
+                            <span class="info">?</span>
+                            <div class="label-display mark-hover column">
+                                <p>The tier that defines your ability or level on playing chess.</p>
+                            </div>
+                        </div>
+                        <select id="levelskill">
+                            <option value="none">---</option>
+                            <option value="primary">Starter</option>
+                            <option value="intermediate">Intermediate</option>
+                            <option value="advanced">Advanced</option>
+                            <option value="expert">Expert</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="input-label-for-identity input-label-display optional">
+                    <div class="flex-textbox">
+                        <label for="identity">Personal Identity</label>
+                        <span class="info">?</span>
+                        <div class="label-display mark-hover">
+                            <p>[optional] Share with us about your own chess-playing experiences — and other thoughts.</p>
+                        </div>
+                    </div>
+                    <textarea id="identity" placeholder="Share with us about your own chess-playing experiences — and other thoughts."></textarea>
+                </div>
+                <p class="info-agreement">
+                    By signing this form up, you consent to our <a href="#">Terms of Use</a> and the <a href="#">Community Guidelines</a>.
+                </p>
+                <div class="flex-centre">
+                    <button type="submit">REGISTER</button>
+                    <div class="label-display mark-hover disclaimer">
+                        <p class="disclaimer">
+                            DISCLAIMER:
+                            <br>
+                            This website does not guarantee to collect data from you; this is only an instance for chess club assessment project.
+                            <br>
+                            <br>
+                            Do not try to enter your own identify and information if you believe it is risky to do so.
+                        </p>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <div class="name-about">
+            <div id="focus-contact">
+                <img src="images/OSC-logo.png" alt="OSC Chess Club logo">
+                <span>
+                    PREMIUM CHESS CLUB
+                </span>
+            </div>
+        </div>
+        <div class="links">
+            <div class="half-display">
+                <div class="linkdisplay">
+                    <h2>ORGANISATION</h2>
+                    <div>
+                        <a>Blogs</a>
+                        <a>Project</a>
+                        <a>About Us</a>
+                        <a>Supply</a>
+                        <a href="attribution-page.html">Attribution</a>
+                        <a>Guidelines</a>
+                    </div>
+                </div>
+                <div class="linkdisplay">
+                    <h2>LEARN MORE</h2>
+                    <div>
+                        <a>Documents</a>
+                        <a>Education</a>
+                        <a>References</a>
+                        <a>Videos</a>
+                    </div>
+                </div>
+            </div>
+            <div class="half-display lower-layer">
+                <div class="linkdisplay lower-layer">
+                    <h2>SUPPORT</h2>
+                    <div>
+                        <a>Donate</a>
+                        <a>Inquiry</a>
+                        <a>Customer Service</a>
+                        <a>Your Rights</a>
+                    </div>
+                </div>
+                <div class="linkdisplay lower-layer"> 
+                    <h2>FOLLOW</h2>
+                    <div>
+                        <span>st00000@ormiston.school.nz</span>
+                        <br>
+                        <span>Facebook</span>
+                        <span>X</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="final-footer">
+            <h4>Computer Science 1 - Year XI Assessment Project</h4>
+            <p>All images are subject to copyright's holder. See Attribution</p>
+        </div>
+    </footer>
+</body>
+</html>

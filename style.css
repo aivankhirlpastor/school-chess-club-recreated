@@ -1,0 +1,1565 @@
+* {
+    margin: 0;
+    font-family: 'Inter', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: normal;
+    color: black;
+}
+
+::selection {
+    background-color: rgba(255, 166, 0, 0.8);
+}
+
+html, body {
+    max-width: 100%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body#sign-up-form-verso {
+    background-image: url(images/chess-form.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+hr {
+    background: rgba(0, 0, 0, 0.5);
+    height: 0.5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+picture img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    z-index: -5;
+    object-fit: cover;
+}
+
+section div.title-label-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+section h1#title-label {
+    font-family: 'Raleway', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+    font-size: 80px;
+    font-variant-caps: small-caps;
+    text-align: center;
+    padding: 10px 9%;
+}
+
+section h1#title-chess, .title-chess {
+    font-family: 'Poppins', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    position: absolute;
+    left: 40px;
+    font-weight: bold;
+    font-size: 100px;
+}
+
+section h1.title-chess.home {
+    top: 175px;
+}
+
+section h1.title-chess.resources {
+    top: 295px;
+}
+
+section h1.title-chess.home::before {
+    content: 'PREMIUM';
+    display: block;
+    font-size: 80px;
+    position: relative;
+    width: 400px;
+    top: 55px;
+    left: 20px;
+    -webkit-text-stroke: 1.6px rgb(255, 253, 208);
+    background: linear-gradient(rgb(244, 231, 161), rgb(165, 145, 29));
+    background-clip: text;
+    color: transparent;
+    z-index: -1;
+}
+
+nav div.title span {
+    font-family: 'Raleway', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 800;
+    text-shadow: 0 2px 10px rgba(255, 255, 255, 0.68);
+    padding: 1px 8px 1px;
+}
+
+nav {
+    position: fixed;
+    width: 96%;
+    top: 8px;
+    left: 0;
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px 2%;
+    z-index: 9999;
+    right: 0;
+}
+
+body#resources-background nav {
+    background: linear-gradient(rgba(234, 218, 81, 0.1), rgba(168, 168, 4, 0.1));
+    border: 1px solid rgba(255, 255, 255, 0.33);
+    border-radius: 9px;
+    box-shadow: 0 3px 20px rgba(130, 130, 130, 0.4);
+}
+
+nav div.top-nav {
+    display: flex;
+}
+
+nav div.title, nav div.more-info-icn {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    box-shadow: 0 5px 35px rgba(210, 210, 210, 0.4);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 7px;
+    margin: 5px;
+    height: 28px;
+}
+
+nav div.more-info-icn {
+    width: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.25);
+    margin-right: 10px;
+}
+
+nav div.more-info-icn:hover {
+    background: rgba(255, 255, 133, 0.4);
+    box-shadow: 0 2px 20px rgba(255, 192, 76, 0.4);
+    color: rgb(154, 54, 15);
+    transition: all 0.3s ease-in-out;
+}
+
+nav div.more-info-icn:active {
+    scale: 0.9;
+    filter: brightness(1.6);
+    box-shadow: 0 2px 25px 3px rgba(210, 210, 210, 0.4);
+    transition: all 0.1s ease-in;
+}
+
+nav div img#menu-panel-btn {
+    width: 18px;
+    height: 18px;
+}
+
+nav div.buttons {
+    display: flex;
+}
+
+nav div.buttons div {
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+}
+
+nav a {
+    font-family: 'Raleway', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: rgb(35, 35, 35);
+    font-size: 24px;
+    font-weight: 600;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    background: rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.33);
+    border-radius: 4px;
+    box-shadow: 0 2px 20px rgba(210, 210, 210, 0.4);
+    margin-left: 20px;
+    padding: 5px;
+    text-align: center;
+    height: 28px;
+}
+
+nav a:hover {
+    transition: all 0.3s ease-in-out;
+}
+
+nav #home-btn-key a:hover {
+    background: rgba(252, 149, 115, 0.6);
+    box-shadow: 0 2px 20px rgba(222, 120, 47, 0.4);
+    color: rgb(80, 34, 11);
+}
+nav #introduction-btn-key a:hover {
+    background: rgba(255, 228, 152, 0.6);
+    box-shadow: 0 2px 20px rgba(255, 210, 76, 0.4);
+    color: rgb(116, 54, 12);
+}
+nav #sign-up-form-btn-key a:hover {
+    background: rgba(247, 255, 132, 0.6);
+    box-shadow: 0 2px 20px rgba(227, 219, 67, 0.4);
+    color: rgb(91, 86, 8);
+}
+
+nav a:active {
+    scale: 0.9;
+    filter: brightness(2);
+    box-shadow: 0 2px 35px 2px rgba(210, 210, 210, 0.4);
+    transition: all 0.15s ease-in;
+}
+
+.label-display {
+    font-size: 15px;
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
+    background: rgba(26, 26, 26, 0.4);
+    border: 1px solid rgba(232, 232, 232, 0.33);
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(210, 210, 210, 0.4);
+    padding: 2px;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    width: auto;
+    max-width: max-content;
+    opacity: 0;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.label-display p {
+    color: white;
+    text-align: center;
+
+}
+
+div#home-btn-key a:hover + .label-display, div#introduction-btn-key a:hover + .label-display, div#sign-up-form-btn-key a:hover + .label-display {
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+
+div #home-btn-key a:active + .label-display, div#introduction-btn-key a:active + .label-display, div#sign-up-form-btn-key a:active + .label-display {
+    opacity: 0.3;
+    transition: opacity 0.15s ease;
+}
+
+
+div.discovery-box {
+    display: flex;
+    width: auto;
+    margin: 20px 2%;
+    height: auto;
+}
+
+div.discovery-exposition-array {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background: #f7f5dd;
+    border: 1px solid rgba(255, 255, 255, 0.33);
+    border-radius: 20px;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4);
+    height: auto;
+    margin: 15px;
+}
+
+div.discovery-exposition-array:nth-child(2) {
+    background: #fdeeda;
+}
+
+div.discovery-box .research-box {
+    display: flex;
+    flex-direction: column;
+    background: rgba(243, 204, 86, 0.5);
+    flex-grow: 1;
+}
+
+div.discovery-box h2 {
+    font-family: 'Raleway', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin: 0 5%;
+    padding: 0 5px 5px;
+    border-bottom: 4px solid black;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+div.discovery-box .discovery-container {
+    width: 65%;
+}
+
+div.discovery-box .discovery-container .company-blog-holder {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    flex-grow: 1;
+}
+
+div.discovery-box .discovery-container .company-blog-holder .portrayal-blog-holder {
+    margin: 15px 5% 0;
+    width: 200%;
+    height: auto;
+    box-shadow: inset 0 0 12px 3px rgba(0, 0, 0, 0.4);
+    background-image: url(images/replacement-for-blank-image.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 16px;
+    filter: sepia(100%);
+
+}
+
+div.discovery-box .adjusting-dbl-container {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+div.discovery-box .box-dis-division-update {
+    height: 50%;
+}
+
+div.box-dis-division-update div {
+    height: 50%;
+    margin-bottom: -10px;
+}
+
+div.discovery-box .adjusting-dbl-container h3 {
+    font-family: 'Raleway', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;
+    padding: 0 12px 7px;
+    font-weight: 800;
+    font-size: 2.4vw;
+    letter-spacing: 2px;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+#flower-above.faded, #flower-below.faded, #flower-label-t.faded, #flower-label-b.faded, #link-shift-top.faded, #link-shift-below.faded {
+    opacity: 0;
+}
+
+div.discovery-box .adjusting-dbl-container a {
+    margin: 0 10px 4px;
+    padding: 3px 1px 3px 20px;
+    line-height: 35px;
+    font-weight: 700;
+    font-size: 3.5vw;
+    text-align: right;
+    color: rgb(56, 42, 5);
+    font-family: 'Poppins', 'Inter', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    transition: opacity 0.5s ease, border-bottom 0.3s ease, padding-bottom 0.3s ease, filter 0.15s ease;
+    transform-origin: right;
+    border-bottom: 4px solid transparent;
+}
+
+div.discovery-box .adjusting-dbl-container a:hover {
+    border-bottom: 4px solid rgb(40, 30, 2);
+    padding-bottom: 8px;
+}
+
+div.discovery-box .adjusting-dbl-container a:active {
+    filter: brightness(2);
+    padding-bottom: 4px;
+}
+
+
+div.discovery-box .discovery-exposition-array p {
+    margin: 10px 12px 0;
+    font-size: 16px;
+    font-weight: 400;
+    transition: opacity 0.5s ease;
+}
+
+div.discovery-box .research-box p#idlabel-pos-centre {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.discovery-flex-centre {
+    display: flex;
+    flex-grow: 0;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+div.discovery-container .multi-desc-shift-organiser {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-right: 20px;
+    height: 95%;
+}
+
+div.discovery-container .multi-desc-shift-organiser .text-top h4 {
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 3.5vw;
+    font-family: 'Raleway', 'Poppins', Arial, Helvetica, sans-serif;
+    font-weight: 800;
+}
+
+div.discovery-container .multi-desc-shift-organiser .label-picker p#label-shifter {
+    text-align: left;
+    font-size: 2.2vw;
+    margin: 0;
+}
+
+div.search-w-nav-bar div.svg-0-icn {
+    background: rgba(190, 190, 190, 0.14);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+}
+
+div.search-w-nav-bar .navigation-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.search-w-nav-bar {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px calc(2% + 15px) 0;
+    width: auto;
+    height: 35px;
+}
+
+div.search-w-nav-bar .box-navbar {
+    border-radius: 12px;
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.4);
+    border: none;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.box-navbar-a.literal-bg {
+    border-radius: 12px;
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    border: none;
+}
+
+div.search-w-nav-bar input {
+    border: none;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    width: 30%;
+    height: 35px;
+    padding: 4px;
+    padding-left: 10px;
+}
+
+div.search-w-nav-bar input::placeholder {
+    font-style: italic;
+}
+
+/* div.search-w-nav-bar input[type=search]::-ms-reveal {
+    display: none;
+    width: 0;
+    height: 0;
+} */
+
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-results-button, input[type="search"]::-webkit-search-results-decoration { 
+    display: none;
+}
+
+div.search-w-nav-bar input:focus {
+    background-color: rgba(255, 255, 186, 0.258);
+    box-shadow: 0 3px 7px rgba(144, 144, 4, 0.4);
+    transition: all 0.2s ease-in-out;
+    appearance: none;
+    color: rgb(75, 75, 0);
+}
+
+div.search-w-nav-bar .navigation-button a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    width: 13vw;
+    height: 27px;
+    padding: 4px;
+    border-radius: 12px;
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.4);
+    border: none;
+    background: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.box-navbar-a.literal-bg.navigation-button a:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 186, 0.258);
+    box-shadow: 0 3px 7px rgba(144, 144, 4, 0.4);
+    transition: all 0.18s ease-in-out;
+}
+
+.box-navbar-a.literal-bg.navigation-button a:active {
+    scale: 0.9;
+    filter: brightness(2);
+    box-shadow: 0 3px 7px rgba(190, 190, 6, 0.4);
+    transition: all 0.1s ease-in-out;
+}
+
+div.search-w-nav-bar .navigation-button a mark {
+    background: none;
+    font-size: 15px;
+    margin-right: 1%;
+}
+
+div.play-section {
+    display: flex;
+    width: 96%;
+    height: 270px;
+    margin: 14px 2% 10px;
+}
+
+div.play-section .division-component-playdis {
+    display: flex;
+    width: 50%;
+    height: 230px;
+    margin: 2% 2%;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background: rgba(196, 244, 255, 0.8);
+    border: 1px solid rgba(0, 136, 255, 0.33);
+    border-radius: 4svb;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+}
+
+div.play-section .division-component-playdis:nth-child(2) {
+    background: rgba(243, 187, 187, 0.8);
+    border: 1px solid rgba(255, 25, 0, 0.33);
+}
+
+div.play-section .division-component-playdis:hover {
+    filter: brightness(1.2);
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+    transition: all 0.2s ease-in-out;
+}
+
+div.play-section .division-component-playdis:active {
+    filter: brightness(3);
+    scale: 0.95;
+    box-shadow: 0 3px 50px rgba(0, 0, 0, 1);
+    transition: all 0.1s ease-in-out;
+}
+
+div.play-section .division-component-playdis img {
+    position: relative;
+    top: 30px;
+    left: 15px;
+}
+
+div.play-section .division-component-playdis .flex-bendapart {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+div.play-section .division-component-playdis .flex-bendapart .emphasise-heading {
+    padding: 15px 20px 0 0;
+}
+
+div.play-section .division-component-playdis b {
+    font-size: 2.4vw;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    pointer-events: none;
+}
+
+div.play-section .board-phrase {
+    font-size: 2vw;
+    font-weight: 500;
+    pointer-events: none;
+}
+
+div.play-section .play-match-singlematch.division-component-playdis p {
+    padding: 8px 4px 0 18px;
+}
+
+div.play-section .play-trial-eventtrials.division-component-playdis p {
+    padding: 8px 4px 0 0;
+}
+
+footer {
+    background: rgba(37, 37, 37, 1);
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 7vh;
+    overflow: hidden;
+    background-image: url(images/chess-footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer .name-about {
+    display: flex;
+    justify-content: center;
+    margin: 25px 30px;
+}
+
+footer .name-about #focus-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .name-about img {
+    width: 100px;
+    height: auto;
+    filter: brightness(0) invert(1);
+}
+
+footer .name-about span {
+    padding-left: 30px;
+    font-size: 20px;
+    color: rgb(202, 202, 202);
+    font-weight: 800;
+}
+
+footer .links {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+footer .links .half-display {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+footer .links .linkdisplay {
+    display: block;
+    border-left: 2px solid snow;
+    padding-left: 20px;
+    margin: 0 auto;
+}
+
+footer .links .linkdisplay div {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .links h2 {
+    font-family: 'Raleway', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    padding-bottom: 6px;
+    color: rgb(224, 224, 224);
+    text-transform: lowercase;
+}
+
+footer .links a, footer .links span {
+    font-family: 'Poppins', 'Inter', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: whitesmoke;
+    margin-bottom: 3px;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+footer .links a {
+    cursor: pointer;
+}
+
+footer .links a:hover {
+    color: grey;
+}
+
+footer .links a:active {
+    color: rgb(161, 161, 161);
+}
+
+footer .final-footer {
+    padding-bottom: 12px;
+}
+
+footer .final-footer h4 {
+    font-size: 20px;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: gray;
+    text-align: center;
+    padding-bottom: 3px;
+}
+
+footer .final-footer p {
+    font-size: 12px;
+    font-weight: 200;
+    color: gainsboro;
+    text-transform: uppercase;
+    text-align: center;
+    font-style: italic;
+}
+
+.par-phrase {
+    text-align: center;
+    margin: 25px 8vh 35px;
+}
+
+.text-display-intro {
+    font-size: 30px;
+}
+
+.text-display-overview {
+    margin: 20px 22px 45px 22px;
+    font-size: 20px;
+}
+
+.phrase-display-info {
+    font-family: 'Raleway', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#text-operational-all-time {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.text-foot {
+    font-size: 10vh;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin: 15vh 0 3vh;
+}
+
+#id-href-links-a {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+}
+
+.grid-categories-information {
+    display: block;
+    justify-content: center;
+    width: 97%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex-container-info, .flex-container-info.demonstration-case-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 30px 80px;
+    padding: 10px;
+    -webkit-backdrop-filter: blur(10px);
+    background: rgba(255, 173, 110, 0.3);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.33);
+    border-radius: 4svb;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4);
+}
+
+.flex-container-info.advantage-case-info {
+    background: rgba(255, 250, 182, 0.2);
+}
+.flex-container-info.advantage-case-info:nth-child(2) {
+    background: rgba(255, 244, 90, 0.2);
+}
+.flex-container-info.advantage-case-info:nth-child(3) {
+    background: rgba(255, 234, 0, 0.2);
+}
+
+.flex-container-info.demonstration-case-info.length {
+    background: rgba(185, 212, 7, 0.15);
+    justify-content: flex-start;
+    min-height: 300px;
+}
+
+.flex-container-info.demonstration-case-info.length:nth-child(even) {
+    background: rgba(108, 65, 0, 0.15);
+}
+
+.flex-container-info-display {
+    display: block;
+}
+
+.flex-container-info img {
+    background-color: gray;
+    object-fit: cover;
+    width: 50%;
+    min-height: 300px;
+    border-radius: 24px;
+}
+
+.flex-container-info .image {
+    background-color: gray;
+    background-position: center;
+    background-size: cover;
+    image-rendering: auto;
+    width: 50%;
+    min-height: 40vh;
+    border-radius: 24px;
+}
+
+.flex-container-info .information {
+    width: 40%;
+    padding: 40px 30px;
+}
+
+.flex-container-info.demonstration-case-info.length .information {
+    width: 50%;
+    padding: 12px 0 12px 20px;
+}
+
+
+.flex-container-info .information h2 {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.flex-container-info.demonstration-case-info.length .information h2 {
+    color: rgb(40, 40, 1);
+    font-family: 'Raleway', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    font-size: 3.2vw;
+    margin-bottom: 5px;
+}
+
+.flex-container-info .information p {
+    margin-top: 15px;
+    font-size: 25px;
+}
+
+.flex-container-info.demonstration-case-info.length .information p {
+    margin: 10px 0 20px 0;
+    font-size: 1.5vw;
+}
+
+.flex-container-info.demonstration-case-info.length .information span {
+    font-size: 16px;
+    font-weight: 300;
+    opacity: 0.5;
+}
+
+.flex-container-info.demonstration-case-info.length .information a {
+    background: rgba(129, 125, 11, 0.2);
+    border: 1px solid rgba(97, 49, 4, 0.1);
+    border-radius: 2svb;
+    font-size: 2vw;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.flex-container-info.demonstration-case-info.length .information a:hover {
+    background: rgba(218, 211, 32, 0.4);
+    border: 1px solid rgba(139, 106, 7, 0.2);
+    transition: all 0.2s ease-in-out;
+}
+
+.flex-container-info.demonstration-case-info.length .information a:active {
+    color: rgb(43, 31, 3);
+    filter: brightness(3);
+    transition: all 0.1s ease-in-out;
+}
+
+
+.flex-container-info.final-display .information h2 {
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.flex-container-info.final-display .information p {
+    font-size: 18px;
+}
+
+.flex-container-info.final-display .image {
+    height: auto;
+}
+
+.rhetorical-info-components {
+    display: grid;
+    grid-gap: 18px;
+    text-align: center;
+    margin: 30px;
+    width: auto;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(3, auto);
+}
+
+.containerbox-definition {
+    text-align: center;
+}
+
+section h1#interrogation-label {
+    font-family: 'Raleway', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    padding: 30px 0 40px; 
+    grid-area: 1 / 1 / span 1 / span 2;
+}
+
+.targetsymbol-icon {
+    font-size: 45px;
+}
+
+p.reason-txt {
+    font-size: 23px;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.containerbox-definition.link-resources {
+    grid-area: 2 / 1 / span 1 / span 1;
+}
+
+.containerbox-definition.link-conversation {
+    grid-area: 2 / 2 / span 1 / span 1;
+}
+
+.containerbox-definition.link-challenge {
+    grid-area: 3 / 1 / span 1 / span 1;
+}
+
+.containerbox-definition.link-support {
+    grid-area: 3 / 2 / span 1 / span 1;
+}
+
+.footer-conclusion h3 {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 4vh;
+}
+
+.footer-conclusion a {
+    display: inline-block;
+    background-color: darkorange;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 7px;
+    letter-spacing: 2px;
+    width: 120px;
+    transition: all 0.2s;
+}
+
+.footer-conclusion a:hover {
+    filter: brightness(1.5);
+    color: rgb(40, 26, 0);
+}
+
+.footer-conclusion a:active {
+    filter: brightness(0.7);
+}
+
+/* background images for flex-container-info */
+.image.image1 {
+    background-image: url(images/strategy_learn.jpg);
+}
+.image.image2 {
+    background-image: url(images/people-playing-chess_battle.jpg);
+}
+.image.image3 {
+    background-image: url(images/the-king-of-kings_leisure.jpg);
+}
+.image.image4 {
+    background-image: url(images/knock-out-chess_about.jpg);
+}
+
+.menu-illustrator a {
+    color: rgb(28, 20, 0);
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    padding: 30px 15px;
+}
+
+/* resources information or education page version 2*/
+
+section .resources-verso {
+    margin: 2%;
+}
+
+/* sign-up-form-screen */
+section.sign-up-form {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 15vh 0 5vh 12%;
+    width: 460px;
+    height: 100%;
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    background: rgba(48, 48, 1, 0.65);
+    border: 1px solid rgba(121, 121, 121, 0.33);
+    border-radius: 16px;
+    box-shadow: 0 3px 20px rgba(203, 197, 9, 0.4);
+}
+
+section.sign-up-form div.flex-centre {
+    display: flex;
+    justify-content: center;
+}
+
+section.sign-up-form h2.heading-label {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: lightyellow;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 40px;
+    font-variant-caps: petite-caps;
+    text-shadow: 1px 1px 1px rgb(62, 62, 62);
+    padding-bottom: 5px;
+    border-bottom: 2px solid lightyellow;
+    width: 90%;
+}
+
+section.sign-up-form p#span-p_getbehind {
+    font-weight: 400;
+    font-family: 'Inter', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: lightyellow;
+    text-align: center;
+    font-size: 19px;
+    letter-spacing: 0.4px;
+    text-shadow: 0.5px 0.5px 2px rgb(50, 50, 50);
+    margin: 0.8em 0;
+}
+
+section.sign-up-form p.info-agreement {
+    color: lightyellow;
+    font-size: 13px;
+    letter-spacing: normal;
+    text-align: left;
+    padding: 0 30px 0;
+}
+
+section.sign-up-form a {
+    color: rgb(249, 244, 183);
+    font-weight: 500;
+    text-decoration: none;
+    background-color: rgba(99, 123, 14, 0.6);
+    border-radius: 5px;
+}
+
+section.sign-up-form a:hover {
+    filter: brightness(1.5);
+    transition: all 0.1s ease-in-out;
+}
+
+section.sign-up-form a:active {
+    filter: brightness(0.5);
+}
+
+form button {
+    font-family: 'Raleway', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    letter-spacing: 3px;
+    color: rgb(35, 35, 35);
+    font-size: 26px;
+    font-weight: 700;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.33);
+    border-radius: 12px;
+    box-shadow: 0 2px 20px rgba(210, 210, 210, 0.4);
+    padding: 7px;
+    width: 270px;
+    margin: 10px 25px 5px;
+    text-align: center;
+}
+
+form button:hover {
+    background: rgba(222, 255, 76, 0.7);
+    box-shadow: 0 2px 20px 3px rgba(228, 255, 76, 0.4);
+    color: rgb(78, 83, 7);
+    transition: all 0.3s ease-in-out;
+}
+
+form button:active {
+    scale: 0.9;
+    filter: brightness(2);
+    box-shadow: 0 2px 35px 2px rgba(210, 210, 210, 0.4);
+    transition: all 0.2s ease;
+}
+
+section.sign-up-form form {
+    width: 100%;
+}
+
+.input-label-display {
+    margin: 10px 20px 10px;
+}
+
+.input-label-display label {
+    font-size: 15px;
+    color: whitesmoke;
+}
+
+.input-label-display input, form select, textarea {
+    box-shadow: 2px 2px 20px 3px rgba(0, 0, 0, 0.55);
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.25);
+    color: white;
+    border-radius: 10px;
+    height: 30px;
+    width: 100%;
+    padding: 1px 0 1px;
+    transition: all 0.25s ease;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.names-first-and-last, .region-gender, .year-levelskill {
+    display: flex;
+}
+
+.column input, .column select {
+    width: 190px;
+}
+
+form span.info {
+    position: static;
+    color: rgb(253, 237, 217);
+    font-size: 14px;
+    height: 22px;
+    padding: 0 9px 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    cursor: default;
+}
+
+form div.input-label-display .mark-hover {
+    position: absolute;
+    top: inherit;
+    background: rgba(26, 26, 26, 0.9);
+    font-size: 13px;
+    margin: 0;
+    left: 180px;
+    max-width: 200px;
+    width: max-content;
+    z-index: 999;
+}
+
+form div.label-display.mark-hover.disclaimer {
+    background: rgba(103, 6, 6, 0.9);
+    border: 1px solid rgba(214, 126, 126, 0.33);
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(244, 195, 195, 0.4);
+    max-width: 400px;
+    width: max-content;
+    z-index: 999;
+    font-size: 11px;
+    top: 465px;
+}
+
+form div.input-label-display .mark-hover.column {
+    left: 370px;
+}
+
+div.flex-textbox {
+    display: flex;
+}
+
+div.input-label-display.optional textarea {
+    resize: none;
+    text-align: left;
+    width: calc(100% - 10px);
+    padding: 5px;
+    height: 80px;
+    appearance: none;
+}
+
+div.input-label-for-email span:hover + .mark-hover, div.input-label-for-firstname span:hover + .mark-hover, div.input-label-for-lastname span:hover + .mark-hover, div.input-label-for-region span:hover + .mark-hover, div.input-label-for-gender span:hover + .mark-hover, div.input-label-for-year span:hover + .mark-hover, div.input-label-for-level span:hover + .mark-hover, div.input-label-for-identity span:hover + .mark-hover, form button:hover + .mark-hover.disclaimer {
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+form button:active + .mark-hover.disclaimer {
+    opacity: 0.5;
+    transition: opacity 0.1s ease;
+}
+
+form textarea::-webkit-scrollbar {
+    width: 16px;
+    background: none;
+}
+
+form textarea::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    background-clip: content-box;
+    border: 5px solid transparent;
+}
+
+form textarea::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(217, 217, 217, 0.8);
+    cursor: pointer;
+}
+
+form textarea:focus::-webkit-scrollbar-thumb {
+    background-color: rgba(37, 37, 37, 0.6);
+}
+
+.input-label-display input:hover, textarea:hover {
+    background-color: rgba(160, 160, 160, 0.6);
+}
+
+.input-label-display input:focus, textarea:focus {
+    scale: 1.05;
+    background-color: rgba(255, 255, 255, 0.75);
+    color: rgb(0, 0, 0);
+}
+
+.input-label-display label::after {
+    content: '*';
+    padding-left: 5px;
+    font-weight: 200;
+    color: rgb(229, 229, 80);
+}
+
+.input-label-display.optional label::after {
+    content: '';
+} 
+
+.input-label-display input::placeholder, .input-label-display textarea::placeholder {
+    color: rgb(180, 180, 180);
+    font-weight: 400;
+    transition: color 0.25s ease;
+}
+
+.input-label-display input:focus::placeholder, .input-label-display textarea:focus::placeholder {
+    color: rgb(55, 55, 55);
+}
+
+form span:hover {
+    color: rgb(255, 214, 139);
+}
+
+form select:hover {
+    scale: 1.05;
+    background-color: rgba(255, 255, 255, 0.75);
+    color: rgb(54, 54, 54);
+}
+
+/* simple outlines for general display*/
+.simple-title-design {
+    font-size: 58px;
+    color: rgb(56, 52, 0);
+    margin: 19vh 9vh 3vh;
+    font-weight: 700;
+}
+
+ul.description li {
+    margin: 4px 40% 2vh 6%;
+    font-size: 19px;
+}
+
+ul.description li a {
+    background: rgb(255, 226, 190);
+    padding: 0 5px;
+    color: rgb(114, 63, 0);
+    font-size: 23px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: all 0.1s ease-in-out;
+}
+
+ul.description li a:hover {
+    background: rgb(255, 184, 98);
+    color: rgb(48, 27, 0);
+}
+
+ul.description li a:active {
+    filter: brightness(0.6);
+}
+
+/* not found page */
+section.not-found-display {
+    height: fit-content;
+}
+
+h1.label-not-found {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 30vh;
+}
+
+p#inform-text {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 30vh;
+    line-height: 1.5;
+}
+
+section.not-found-display a {
+    color: rgb(150, 122, 0);
+}
+
+section.not-found-display a:link {
+    color: rgb(150, 122, 0);
+}
+
+section.not-found-display a:hover {
+    color: rgb(87, 57, 0);
+}
+
+@media (max-width: 850px) {
+    nav {
+        display: block;
+        margin: 8px 2%;
+        width: auto;
+    }
+
+    nav div.top-nav {
+        justify-content: center;
+    }
+
+    nav div.title, nav div.more-info-icn {
+        display: flex;
+        width: 50%;
+        margin: 1px 1% 13px;
+        justify-content: center;
+        align-content: center;
+    }
+
+    nav .more-info-icn.extent {
+        width: 28px;
+    }
+
+    nav div.buttons {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav a {
+        margin: 0 10px 0;
+    }
+
+    section h1#title-chess.home {
+        position: absolute;
+        line-height: 100px;
+        word-spacing: 99px;
+        top: 120px;
+        left: 40px;
+        width: 60vh;
+    }
+
+    section h1#title-chess.home::before {
+        display: block;
+        font-size: 80px;
+        position: relative;
+        top: 20px;
+        left: 20px;
+    }
+
+    section h1#title-label {
+        font-size: 60px;
+        padding: 10px 5%;
+    }
+
+    .label-display {
+        top: 110px;
+    }
+
+    div.discovery-box {
+        top: 130px;
+    }
+
+    div.discovery-box .adjusting-dbl-container h3 {
+        font-size: 22px;
+    }
+
+    div.discovery-box .adjusting-dbl-container a {
+        font-size: 30px;
+        padding-left: 15px;
+        padding-bottom: 0;
+    }
+
+    div.discovery-box .adjusting-dbl-container a:hover {
+        padding-bottom: 4px;
+    }
+
+    div.discovery-box .adjusting-dbl-container a:active {
+        padding-bottom: 2px;
+    }
+
+    div.discovery-container .multi-desc-shift-organiser .text-top h4 {
+        font-size: 28px;
+    }
+    
+    div.discovery-container .multi-desc-shift-organiser .label-picker p#label-shifter {
+        font-size: 18px;
+    }
+
+    div.search-w-nav-bar input {
+        width: 45%;
+    }
+
+    div.search-w-nav-bar .navigation-button a {
+        width: 7vw;
+    }
+
+    div.search-w-nav-bar .navigation-button a strong {
+        display: none;
+    }
+
+    div.play-section {
+        display: block;
+        width: 96%;
+        height: auto;
+    }
+
+    div.play-section .division-component-playdis {
+        width: 96%;
+    }
+
+    div.play-section .division-component-playdis b {
+        font-size: 6vw;
+    }
+
+    div.play-section .board-phrase {
+        font-size: 3vw;
+    }
+
+    .flex-container-info-display {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .flex-container-info.demonstration-case-info.length {
+        flex-direction: column;
+        width: 50%;
+        margin: 20px 2% 0;
+        height: 80vh;
+    }
+
+    .flex-container-info img {
+        width: 100%;
+        height: 200px;
+        min-height: 200px;
+    }
+
+    .flex-container-info.demonstration-case-info.length .information {
+        width: 90%;
+        padding: 8px 2.5%;
+    }
+
+    .flex-container-info .information p {
+        font-size: 21px;
+    }
+
+    .flex-container-info.demonstration-case-info.length .information p {
+        font-size: 2vw;
+    }
+
+    .flex-container-info .information h2 {
+        font-size: 36px;
+    }
+
+    .flex-container-info .information {
+        padding: 18px 10px;
+    }
+
+    .flex-container-info.final-display .information {
+        width: auto;
+    }
+    
+    .flex-container-info.final-display .information h2 {
+        font-weight: 700;
+        font-size: 25px;
+    }
+    
+    .flex-container-info.final-display .information p {
+        font-size: 20px;
+    }
+    
+    .flex-container-info.final-display .image {
+        display: none;
+    }
+
+    .footer-conclusion h3 {
+        margin: 3vh 4%;
+    }
+
+    section.sign-up-form {
+        margin-top: 20vh;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    section .scroll-nav {
+        left: -280px;
+        z-index: 99999;
+    }
+
+    section .scroll-nav button {
+        display: inline-block;
+    }
+
+    section .resources-page {
+        margin-left: 2%;
+        margin-right: 2%;
+        max-width: calc(100% - 4%)
+    }
+
+    ul.description li {
+        margin: 4px 6% 2vh;
+    }
+
+    footer .links {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    footer .links .half-display {
+        justify-content: center;
+    }
+
+    footer .half-display.lower-layer, footer .half-display .linkdisplay.lower-layer {
+        margin-bottom: 5px;
+    }
+    
+    footer .links .linkdisplay {
+        display: block;
+        border-left: none;
+        border-bottom: 2px solid snow;
+        padding-bottom: 20px;
+        width: 30%;
+        margin: 0 24px 40px 0;
+    }
+    
+    footer .links .linkdisplay div {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+}
